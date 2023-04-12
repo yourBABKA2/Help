@@ -1,0 +1,18 @@
+﻿<Page x:Class="WpfApp2.View.Authorization"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp2.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="800"
+      Title="Авторизация" Background="White" FontFamily="Comic Sans MS">
+    <UniformGrid Columns="2" Rows="3">
+        <Label Content="Введите логин" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Name="TextBoxLogin" Margin="35,70" FontSize="25"/>
+        <Label Content="Введите пароль" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Name="TextBoxPassword" Margin="35,70" FontSize="25"/>
+        <Button Name="BtnGues" Content="Войти как гость" FontSize="25" Margin="25,75" Click="BtnGuest_Click"/>
+        <Button Name="BtnEnter" Content="Войти" FontSize="25" Margin="25,75" Click="BtnEnter_Click"/>
+    </UniformGrid>
+</Page>
