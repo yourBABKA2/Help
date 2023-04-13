@@ -1,0 +1,11 @@
+double[,] arrayDisc = new double[,] { { 0, 100 }, { 0, 10 }, { 10, 14 }, { 15, 100 } };
+
+        private void SelectionSale(object sender, RoutedEventArgs e)
+        {
+            filterDisc = comboBoxSale.SelectedIndex;
+            showServices();
+        }
+
+services = services.Where(x => (x.ServiceSale >= arrayDisc[filterDisc, 0] &&
+                                        x.ServiceSale <= arrayDisc[filterDisc, 1])).ToList();
+
